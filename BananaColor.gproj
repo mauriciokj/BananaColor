@@ -1,0 +1,13 @@
+<project>
+ <properties autorotation="0" fps="60" scaleMode="5" mouseToTouch="1" iosDevice="0" packageName="com.yourdomain.yourapp" logicalHeight="800" logicalWidth="480" mouseTouchOrder="0" retinaDisplay="0" touchToMouse="1" assetsOnly="0" orientation="1" architecture="0">
+  <imageScales/>
+ </properties>
+ <folder name="gfx">
+  <file source="gfx/banana_vermelha.png"/>
+  <file source="gfx/banana_verde.png"/>
+  <file source="gfx/banana_azul.png"/>
+  <file downsizing="1" source="gfx/banana_amarela.png"/>
+ </folder>
+ <file source="banana.lua"/>
+ <file source="main.lua"/>
+</project>
