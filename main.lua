@@ -12,6 +12,8 @@ local banana_verde = Banana.new("verde")
 local banana_vermelha = Banana.new("vermelha")
 local banana_azul = Banana.new("azul")
 
+jogo = Jogo.new()
+
 banana_verde:setX(70)
 banana_verde:setY(180)
 
@@ -29,6 +31,8 @@ stage:addChild(banana_azul)
 stage:addChild(banana_vermelha)
 stage:addChild(banana_verde)
 
+
+jogo:jogar()
 
 
 
