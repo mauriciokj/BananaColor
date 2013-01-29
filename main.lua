@@ -7,10 +7,10 @@ end
 stage:addEventListener(Event.KEY_UP, onKeyUp)
 
 
-local banana_amarela = Banana.new("amarela")
-local banana_verde = Banana.new("verde")
-local banana_vermelha = Banana.new("vermelha")
-local banana_azul = Banana.new("azul")
+banana_amarela = Banana.new("amarela")
+banana_verde = Banana.new("verde")
+banana_vermelha = Banana.new("vermelha")
+banana_azul = Banana.new("azul")
 
 jogo = Jogo.new()
 
