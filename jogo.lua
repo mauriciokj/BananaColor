@@ -29,11 +29,14 @@ function Jogo:acertou()
 	return retorno
 end
 
+function Jogo:reiniciar()
+	self.sequencia = {}
+	self.jogada = {}
+end
+
 function Jogo:mostrar_jogadas()
+	self.jogada = {}
 	function pinta(cor,original)
-	print("entrou no pinta")
-	print(cor)
-	print(original)
 		if cor == "amarelo" then
 			if original then
 				banana_amarela:setColorTransform(1,1,1)
@@ -67,9 +70,6 @@ function Jogo:mostrar_jogadas()
 	end
 	i = 1
 	for i = 1, table.getn(self.sequencia) do
-		print("entrou no for")
-		print(i)
-		print(self.sequencia[i])
 		--pinta(self.sequencia[i], false)
 		--Timer.delayedCall(1000, (pinta(self.sequencia[i], false)))		
 	end

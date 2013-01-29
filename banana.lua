@@ -11,7 +11,6 @@ end
 function Banana:onMouseDown(event)
 	function corOriginal()
 		self:setColorTransform(1,1,1)
-		jogo:jogar()
 	end	
 
 	if self:hitTestPoint(event.x, event.y) then
@@ -27,9 +26,12 @@ function Banana:onMouseDown(event)
 		Timer.delayedCall(500, corOriginal)
 		table.insert(jogo.jogada, self.cor)
 		if jogo:acertou() then
-			print("acertou")
-			jogo:mostrar_jogadas()
+			if table.getn(jogo.sequencia) == table.getn(jogo.jogada) then
+				jogo:jogar()
+				jogo:mostrar_jogadas()
+			end
+		else
+			jogo:reiniciar()
 		end
-	
 	end
 end
